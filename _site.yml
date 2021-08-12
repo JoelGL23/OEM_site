@@ -1,0 +1,25 @@
+name: "OEM"
+output_dir: "."
+navbar:
+  title: "OEM"
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "Descripción"
+      href: descripcion.html
+    - text: "Reportes semanales"
+      menu:
+      - text: "Semanas de Enero del 2021"
+      - text: "Reporte del 2021-01-01 al 2021-01-03"
+        href: about.html
+    - text: "Reportes mensuales"
+      menu:
+      - text: "Reporte de Enero del 2021"
+        href: about.html
+    - text: "Acerca"
+      href: about.html
+
+output:
+  html_document:
+    theme: flatly
+    css: style.css
