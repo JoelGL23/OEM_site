@@ -1,0 +1,48 @@
+```{r, include = F}
+esquema <- "resultado_semanal."
+fecha <- paste("'",primera_fila$fecha_inicial,"'",sep = "")
+source("backend_OEM/2_r_scripts/lectura_requisitos.R")
+source("backend_OEM/2_r_scripts/creacion_graficas.R")
+```
+
+```{r global_options, include = F}
+library(knitr)
+library(kableExtra)
+knitr::opts_chunk$set(echo = F, message = F, warning = F, fig.align = 'center')
+```
+# Gráficas semanales
+
+## Casos confirmados de covid-19
+
+```{r fig.cap = "Diferenecia de casos confirmados de Covid-19 por día", fig.pos = 'H', results = 'hide'}
+df12_plot
+```
+
+```{r}
+datatable(df12)
+```
+
+## Muertes con covid-19
+
+```{r fig.cap = "Diferencia de muertes con Covid-19 por día", fig.pos = 'H', results = 'hide'}
+df13_plot
+```
+
+```{r}
+datatable(df13)
+```
+
+# Gráficas del `r primera_fecha_titulo`
+
+```{r child = 'backend_OEM/3_r_markdown/requisitos.Rmd'}
+```
+# Gráficas del `r ultima_fecha_titulo`
+
+```{r, include = F}
+esquema <- "resultado_semanal."
+fecha <- paste("'",ultima_fila$fecha_inicial,"'",sep = "")
+source("backend_OEM/2_r_scripts/lectura_requisitos.R")
+source("backend_OEM/2_r_scripts/creacion_graficas.R")
+```
+```{r child = 'backend_OEM/3_r_markdown/requisitos.Rmd'}
+```

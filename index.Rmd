@@ -1,5 +1,56 @@
----
-title: "OpenEyesMex"
----
+# Introducción
+_**OBJETIVO:**_ Presentar un conjunto de gráficos actualizados que representen la situación actual de Covid-19 en la República Mexicana.
 
-![](images/const.jpg)
+En el año 2020 surgió una nueva enfermedad que con el paso del tiempo se convirtió en una pandemia que esta afectando a todo el mundo. Esto ocasiona que la mayoría de las personas vivan sus días con miedo debido a que hay muchas preguntas que no se han resuelto debido a eso se propone que este reporte sea lo mas completo posible para que las personas puedan resolver una parte de sus dudas y sean mas cocientes de la situación actual de la República Mexicana.
+
+Los datos utilizados para generar este reportes son proporcionados por el gobierno federal a través de la secretaria de salud y puede ser consultados [**aquí**](https://www.gob.mx/salud/documentos/datos-abiertos-152127).
+
+# Descripción de requisitos
+
+* **Requisito 1.- Mapa de México** 
+
+*Descripción:* Generar un mapa de calor que represente los casos positivos de COVID-19 que se han presentado en toda la República Mexicana.
+
+* **Requisito 2.- Migrantes** 
+
+*Descripción:* Generar una gráfica de pastel que compare los migrantes que dieron positivo para COVID-19 y muestre de qué país proviene.
+
+* **Requisito 3.- Defunciones con covid-19** 
+
+*Descripción:* Generar una grafica de barras con la cantidad de defunciones por COVID-19 y los clasifique por edad y sexo.
+
+* **Requisito 4.- Covid-19 en las entidades** 
+
+*Descripción:* Generar un treemap con las entidades que tienen más actividad de COVID-19 (Casos positivos, sospechosos, rechazados, negativos, etc)
+
+* **Requisito 5.- Enfermedades en la República Mexicana** 
+
+*Descripción:* Generar una gráfica de barras que muestre todas las enfermedades que han afectado a los estados de la República Mexicana.
+
+* **Requisito 6.- Embarazo y covid-19** 
+
+*Descripción:* Generar una gráfica que compara las muertes de pacientes embarazadas con problemas de asma y mayores de 30 años en contraste con:
+
+  > + Muertes en pacientes embarazadas no asmáticas mayores de 30 años
+  > + Muertes en pacientes embarazadas y asmáticas menores de 30 años.
+  > + Muertes en pacientes no embarazadas y asmáticas menores de 30 años
+
+* **Requisito 7.- Muertes con diabetes y covid-19** 
+
+*Descripción:* Generar una gráfica donde se muestre el porcentaje de defunción en infectados con diabetes y requieren de intubación. Además de especificar el género por cada entidad federativa y a nivel nacional.
+
+* **Requisito 8.- Enfermedades y covid-19** 
+
+*Descripción:* Generar una gráfica con la cantidad total de pacientes positivos a COVID-19 en contraste con la cantidad de pacientes con otra enfermedad (Diabetes, EPOC, Asma, Hipertensión, Obesidad, Inmunosupresión, Insuficiencia Renal Crónica, Tabaquismo). Además de especificar el género por cada entidad federativa y a nivel nacional.
+
+* **Requisito 9.- Covid-19 contra los días de fallecimiento** 
+
+*Descripción:* Generar una gráfica donde se muestre el porcentaje de pacientes positivos en COVID-19 fallecidos con diferencia mayor a 2 entre el día de la sintomatología y el de ingreso en contraste con el porcentaje de sus iguales pero con diferencia menor o igual a 2.
+
+* **Requisito 10.- Covid-19 y las personas intubadas** 
+
+*Descripción:* Generar una gráfica donde se muestre el porcentaje de pacientes positivos en COVID-19 entubados con fecha de defunción en contraste con los entubados sin fecha de defunción.
+
+* **Requisito 11.- Covid-19 y enfermedades cardiovasculares** 
+
+*Descripción:* Generar una gráfica con la cantidad total de pacientes positivos a COVID-19 y enfermedades cardiovasculares que han fallecido.

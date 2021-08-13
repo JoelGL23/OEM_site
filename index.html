@@ -11,7 +11,7 @@
 
 
 
-<title>OpenEyesMex</title>
+<title>index.knit</title>
 
 <script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -29,6 +29,9 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -219,6 +222,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -226,6 +292,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -238,7 +314,7 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">OEM</a>
+      <a class="navbar-brand" href="index.html">OpenEyesMex</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -247,9 +323,6 @@ $(document).ready(function () {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="index.html">Home</a>
-</li>
-<li>
-  <a href="descripcion.html">Descripción</a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -260,7 +333,7 @@ $(document).ready(function () {
   <ul class="dropdown-menu" role="menu">
     <li class="dropdown-header">Semanas de Enero del 2021</li>
     <li>
-      <a href="about.html">Reporte del 2021-01-01 al 2021-01-03</a>
+      <a href="Reporte-semanal-del-2021-01-01-al-2021-01-03.html">Reporte del 2021-01-01 al 2021-01-03</a>
     </li>
   </ul>
 </li>
@@ -288,15 +361,75 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">OpenEyesMex</h1>
 
 </div>
 
 
-<p><img src="images/const.jpg" /></p>
+<div id="introducción" class="section level1">
+<h1>Introducción</h1>
+<p><em><strong>OBJETIVO:</strong></em> Presentar un conjunto de gráficos actualizados que representen la situación actual de Covid-19 en la República Mexicana.</p>
+<p>En el año 2020 surgió una nueva enfermedad que con el paso del tiempo se convirtió en una pandemia que esta afectando a todo el mundo. Esto ocasiona que la mayoría de las personas vivan sus días con miedo debido a que hay muchas preguntas que no se han resuelto debido a eso se propone que este reporte sea lo mas completo posible para que las personas puedan resolver una parte de sus dudas y sean mas cocientes de la situación actual de la República Mexicana.</p>
+<p>Los datos utilizados para generar este reportes son proporcionados por el gobierno federal a través de la secretaria de salud y puede ser consultados <a href="https://www.gob.mx/salud/documentos/datos-abiertos-152127"><strong>aquí</strong></a>.</p>
+</div>
+<div id="descripción-de-requisitos" class="section level1">
+<h1>Descripción de requisitos</h1>
+<ul>
+<li><strong>Requisito 1.- Mapa de México</strong></li>
+</ul>
+<p><em>Descripción:</em> Generar un mapa de calor que represente los casos positivos de COVID-19 que se han presentado en toda la República Mexicana.</p>
+<ul>
+<li><strong>Requisito 2.- Migrantes</strong></li>
+</ul>
+<p><em>Descripción:</em> Generar una gráfica de pastel que compare los migrantes que dieron positivo para COVID-19 y muestre de qué país proviene.</p>
+<ul>
+<li><strong>Requisito 3.- Defunciones con covid-19</strong></li>
+</ul>
+<p><em>Descripción:</em> Generar una grafica de barras con la cantidad de defunciones por COVID-19 y los clasifique por edad y sexo.</p>
+<ul>
+<li><strong>Requisito 4.- Covid-19 en las entidades</strong></li>
+</ul>
+<p><em>Descripción:</em> Generar un treemap con las entidades que tienen más actividad de COVID-19 (Casos positivos, sospechosos, rechazados, negativos, etc)</p>
+<ul>
+<li><strong>Requisito 5.- Enfermedades en la República Mexicana</strong></li>
+</ul>
+<p><em>Descripción:</em> Generar una gráfica de barras que muestre todas las enfermedades que han afectado a los estados de la República Mexicana.</p>
+<ul>
+<li><strong>Requisito 6.- Embarazo y covid-19</strong></li>
+</ul>
+<p><em>Descripción:</em> Generar una gráfica que compara las muertes de pacientes embarazadas con problemas de asma y mayores de 30 años en contraste con:</p>
+<blockquote>
+<ul>
+<li>Muertes en pacientes embarazadas no asmáticas mayores de 30 años</li>
+<li>Muertes en pacientes embarazadas y asmáticas menores de 30 años.</li>
+<li>Muertes en pacientes no embarazadas y asmáticas menores de 30 años</li>
+</ul>
+</blockquote>
+<ul>
+<li><strong>Requisito 7.- Muertes con diabetes y covid-19</strong></li>
+</ul>
+<p><em>Descripción:</em> Generar una gráfica donde se muestre el porcentaje de defunción en infectados con diabetes y requieren de intubación. Además de especificar el género por cada entidad federativa y a nivel nacional.</p>
+<ul>
+<li><strong>Requisito 8.- Enfermedades y covid-19</strong></li>
+</ul>
+<p><em>Descripción:</em> Generar una gráfica con la cantidad total de pacientes positivos a COVID-19 en contraste con la cantidad de pacientes con otra enfermedad (Diabetes, EPOC, Asma, Hipertensión, Obesidad, Inmunosupresión, Insuficiencia Renal Crónica, Tabaquismo). Además de especificar el género por cada entidad federativa y a nivel nacional.</p>
+<ul>
+<li><strong>Requisito 9.- Covid-19 contra los días de fallecimiento</strong></li>
+</ul>
+<p><em>Descripción:</em> Generar una gráfica donde se muestre el porcentaje de pacientes positivos en COVID-19 fallecidos con diferencia mayor a 2 entre el día de la sintomatología y el de ingreso en contraste con el porcentaje de sus iguales pero con diferencia menor o igual a 2.</p>
+<ul>
+<li><strong>Requisito 10.- Covid-19 y las personas intubadas</strong></li>
+</ul>
+<p><em>Descripción:</em> Generar una gráfica donde se muestre el porcentaje de pacientes positivos en COVID-19 entubados con fecha de defunción en contraste con los entubados sin fecha de defunción.</p>
+<ul>
+<li><strong>Requisito 11.- Covid-19 y enfermedades cardiovasculares</strong></li>
+</ul>
+<p><em>Descripción:</em> Generar una gráfica con la cantidad total de pacientes positivos a COVID-19 y enfermedades cardiovasculares que han fallecido.</p>
+</div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -329,6 +462,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = false;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

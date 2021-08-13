@@ -1,5 +1,22 @@
 img {
-  width: 400px;
+  width: 100%;
   display: block;
   margin: 0 auto;
+}
+
+body {
+    font-family: 'Muli';
+    font-size: 19px;
+    text-align: justify
+}
+
+.main-container {
+  max-width: 80% !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-default {
+  margin-left: auto;
+  margin-right: auto;
 }

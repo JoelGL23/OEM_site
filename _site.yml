@@ -1,17 +1,15 @@
-name: "OEM"
+name: "OpenEyesMex"
 output_dir: "."
 navbar:
-  title: "OEM"
+  title: "OpenEyesMex"
   right:
     - text: "Home"
       href: index.html
-    - text: "Descripción"
-      href: descripcion.html
     - text: "Reportes semanales"
       menu:
       - text: "Semanas de Enero del 2021"
       - text: "Reporte del 2021-01-01 al 2021-01-03"
-        href: about.html
+        href: Reporte-semanal-del-2021-01-01-al-2021-01-03.html
     - text: "Reportes mensuales"
       menu:
       - text: "Reporte de Enero del 2021"
@@ -21,5 +19,9 @@ navbar:
 
 output:
   html_document:
+    toc: true                                                              
+    toc_float:                                                             
+      collapse: false                                                      
+      smooth_scroll: false
     theme: flatly
     css: style.css
