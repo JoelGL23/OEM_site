@@ -13,6 +13,7 @@ install.packages("janitor")
 install.packages("kableExtra")
 install.packages("knitr")
 install.packages("tinytex")
+install.packages("DT")
 install.packages("rmarkdown", type = "source")
 
 library(tinytex)

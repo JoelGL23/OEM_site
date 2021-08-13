@@ -1,0 +1,133 @@
+---
+output: html_document
+---
+## Requisito 1
+
+```{r fig.cap = "Mapa con los estados mas afectados.", fig.pos = 'H', results = 'hide'}
+df1_plot
+```
+
+```{r}
+datatable(df1)
+```
+
+## Requisito 2
+
+```{r fig.cap = "Personas extrangeras positivas en covid-19.", fig.pos = 'H', results = 'hide'}
+df2_plot + theme(legend.position = "none")
+```
+
+```{r}
+datatable(df2)
+```
+
+## Requisito 3
+
+```{r fig.cap = "Muertes por covid-19.", results = 'hide', fig.pos = 'H', out.width = "70%"}
+df3_plot
+```
+
+```{r}
+datatable(df3)
+```
+
+## Requisito 4
+
+```{r fig.cap = "Muertes por covid-19.", fig.pos = 'H', results = 'hide', out.width = "70%"}
+df4_plot
+```
+
+```{r}
+datatable(df4)
+```
+
+## Requisito 5
+
+```{r fig.cap = "Enfermedades que afectan la Republica Mexicana.", fig.pos = 'H', results = 'hide', out.width = "100%"}
+df5_plot
+```
+
+```{r}
+datatable(df5)
+```
+
+## Requisito 6
+
+```{r fig.cap = "Comparación de muertes de mujeres embarazadas.", fig.pos = 'H', results = 'hide'}
+df6_plot
+```
+
+```{r}
+datatable(df6)
+```
+
+## Requisito 7
+
+```{r fig.cap = "Muertes con diabetes.", fig.pos = 'H', results = 'hide'}
+df7_plot_a
+```
+
+```{r fig.cap = "Porcentajes de muertes con diabetes.", fig.pos = 'H', results = 'hide'}
+df7_plot_b
+```
+
+```{r fig.cap = "Porcentajes con diabetes e intubados.", fig.pos = 'H', results = 'hide'}
+df7_plot_c
+```
+
+```{r}
+datatable(df7)
+```
+
+## Requisito 8
+
+```{r fig.cap = "Enfermedades por estado.", fig.pos = 'H', results = 'hide'}
+df8_plot_a
+```
+
+```{r fig.cap = "Enfermedades.", fig.pos = 'H', results = 'hide'}
+df8_plot_b
+```
+
+```{r}
+datatable(df8)
+```
+
+## Requisito 9
+
+
+```{r fig.cap = "Total de muertes por COVID-19.", fig.pos = 'H', results = 'hide'}
+df9_plot_a
+```
+
+```{r fig.cap = "Personas con COVID-19.", fig.pos = 'H', results = 'hide'}
+df9_plot_b
+```
+
+```{r}
+datatable(df9)
+```
+
+## Requisito 10
+
+```{r fig.cap = "Total de muertes por COVID-19.", fig.pos = 'H', results = 'hide'}
+df10_plot_a
+```
+
+```{r fig.cap = "Porcentaje de personas con COVID-19.", fig.pos = 'H', results = 'hide'}
+df10_plot_b
+```
+
+```{r}
+datatable(df10)
+```
+
+## Requisito 11
+
+```{r fig.cap = "Total de muertes con COVID-19 y problemas cardiovasculares.", fig.pos = 'H', results = 'hide'}
+df11_plot
+```
+
+```{r}
+datatable(df11)
+```
