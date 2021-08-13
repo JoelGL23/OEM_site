@@ -8,6 +8,7 @@ source("backend_OEM/2_r_scripts/creacion_graficas.R")
 ```{r global_options, include = F}
 library(knitr)
 library(kableExtra)
+library(DT)
 knitr::opts_chunk$set(echo = F, message = F, warning = F, fig.align = 'center')
 ```
 # Gráficas semanales
